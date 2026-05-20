@@ -5,52 +5,88 @@ a {
     color: rgb(25, 212, 38);
     transition: 1s;
     margin-left: 200px;
+    font-size: 30px; 
+    
 }
 .logo:hover {
     color: aquamarine;
     transition: 1s;
-    margin-left: 210px;
+    margin-left: 200px;
+    font-size: 36px;
 }
 
 .welcome-block {
-    margin-left: 300px;
+    margin-left: 190px;
     background-color: aqua;
-    width: 420px;
-    padding: 25px;
-    height: 80px;
+    width: 890px;
+    height: 180px;
     border-radius: 25px;
+    font-size: 25px;
+    transition: 1s;
+    padding-left: 25px;
+}
+
+.welcome-block:hover {
+    margin-left: 190px;
+    background-color: aqua;
+    width: 910px;
+    height: 200px;
+    border-radius: 25px;
+    font-size: 28px;
+    transition: 1s;
+    padding-left: 25px;
 }
 .features-grid {
-    margin-left: 300px;
+    margin-left: 190px;
     background-color: aquamarine;
-    padding: 25px;
-    width: 450px;
+    width: 880px;
     border-radius: 25px;
+    padding-left: 25px;
+    height: 220px;
+    margin-top: 20px;
+    font-size: 25px;
+    transition: 1s;
 }
-.reg-section {
-    margin-left: 300px;
+
+.features-grid:hover {
+    margin-left: 190px;
+    background-color: aquamarine;
+    width: 900px;
+    border-radius: 25px;
+    padding-left: 25px;
+    height: 240px;
+    margin-top: 20px;
+    font-size: 28px;
+    transition: 1s;
 }
+
 footer {
-    margin-left: 300px;
+    margin-left: 190px;
+    margin-top: 100px;
 }
 nav {
-    margin-left: 770px;
+    margin-left: 660px;
     transition: 1s;
+    margin-bottom: 20px;
     color:rgb(25, 212, 38);
+    font-size: 20px;
 }
 
 nav:hover {
-    margin-left: 780px;
+    margin-left: 600px;
+    font-size: 23px;
     transition: 1s;
     color: aquamarine;
 }
 
 .reg-section {
-    width: 350px;
-    height: 300px;
+    width: 890px;
+    height: 100%;
     background-color:aqua;
     border-radius: 25px;
-    padding-left: 15px;
+    padding: 25px;
+    margin-left: 190px;
+    margin-top: 20px;
 }
 
 #email {
@@ -81,6 +117,7 @@ nav:hover {
     background-color: rgb(196, 148, 85);
     border-radius: 25px;
     transition: 1s;
+    margin-top: 10px;
     
 }
 
@@ -90,6 +127,83 @@ nav:hover {
     background-color: rgb(125, 89, 41);
     border-radius: 35px;
     transition: 1s;
+    margin-top: 10px;
     
 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    #welcome-block,
+    .welcome-block:hover,
+    .reg-section,
+    nav,
+    footer,
+    .logo-hover,
+    .features-grid,
+    .features-grid:hover {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    #logo {
+        margin-left: 0;
+    }
+
+    .reg-section {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .features-grid, .features-grid:hover {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    #email, #password, #repeatPassword {
+        width: 100%;
+        max-width: 400px; 
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .button1, .button1:hover {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .welcome-block, .welcome-block:hover {
+        width: 90%; 
+        max-width: 400px;
+        margin: 30px auto; 
+        padding: 20px;
+        height: auto; 
+        display: flex;
+        text-align: center;
+        transition: 1s;
+    }
+
+    nav, footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    nav {
+        margin-bottom: 10px;
+        display: flex; 
+        flex-direction: column; 
+    }
 }
