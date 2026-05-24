@@ -1,0 +1,188 @@
+a {
+    color: rgb(32, 91, 25);
+}
+.logo {
+    color: rgb(25, 212, 38);
+    transition: 1s;
+    margin-left: 200px;
+    font-size: 30px; 
+    
+}
+.logo:hover {
+    color: aquamarine;
+    transition: 1s;
+    margin-left: 200px;
+    font-size: 36px;
+}
+nav {
+    margin-left: 660px;
+    transition: 1s;
+    margin-bottom: 20px;
+    color:rgb(25, 212, 38);
+    font-size: 20px;
+}
+
+nav:hover {
+    margin-left: 600px;
+    font-size: 23px;
+    transition: 1s;
+    color: aquamarine;
+}
+
+footer {
+    margin-left: 190px;
+    margin-top: 100px;
+}
+.img10 {
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.card1 {
+    background-color: aquamarine;
+    width: 250px;
+    height: 450px;
+    margin: 7px;
+    text-align: center;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.card1:hover {
+    background-color: aquamarine;
+    width: 256px;
+    height: 456px;
+    margin: 4px;
+    text-align: center;
+    border-radius: 25px;
+    transition: 1s;
+    box-shadow: 18px 21px 50px 0px rgba(34, 60, 80, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+button {
+    background-color: aqua;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    transition: 1s;
+}
+button:hover {
+    background-color: rgb(121, 255, 255);
+    width: 210px;
+    height: 70px;
+    border-radius: 25px;
+    box-shadow: 18px 21px 50px 0px rgba(34, 60, 80, 0.5);
+    transition: 1s;
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .logo {
+        margin-left: 20px;        
+        font-size: 24px;          
+        text-align: center;      
+    }
+
+    /* Навигация */
+    nav {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    nav a {
+        padding: 8px 12px;        
+    }
+
+    
+    nav:hover {
+        margin-left: 0;
+        font-size: 18px;
+        transition: none;
+    }
+
+    
+    .container {
+        flex-direction: column;    
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    
+    .card1 {
+        width: 100%;              
+        max-width: 350px;         
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    
+    .img10 {
+        width: 100%;              
+        max-width: 250px;
+        height: auto;             
+        border-radius: 20px;
+    }
+
+    /* Заголовки и текст */
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 80%;              
+        max-width: 200px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .card1:hover {
+        width: 100%;
+        max-width: 350px;
+        margin: 0;
+    }
+
+    
+    footer {
+        margin-left: 0;
+        margin-top: 40px;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .socials, .links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .socials a, .links a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    footer div:last-child {
+        font-size: 0.85rem;
+    }
+}
