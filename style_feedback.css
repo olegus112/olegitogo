@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    gap: 30px; /* Одинаковое расстояние между ссылками */
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6fc77b;
+}
+
+nav a:hover {
+    color: #6fc77b;
+}
+
+main.feedback {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.goodgood {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #72e28a;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.badbad {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e94a3d;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.good, .bad {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.good {
+    background-color: #a6f4d1;
+}
+
+.bad {
+    background-color: #e96537;
+}
+
+.img112 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background-color: #ffffff;
+}
+
+.good > div, .bad > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.good h2, .bad h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+
+.good h3, .bad h3 {
+    font-size: 1.2rem;
+    color: #f7dc6f;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.good p, .bad p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #fdf6eb;
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.socials, .links {
+    display: flex;
+    gap: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d18d4b;
+}
+
+footer div:last-child {
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 25px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .good, .bad {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .review-header {
+        justify-content: center;
+    }
+
+    .good h2, .bad h2 {
+        font-size: 1.1rem;
+    }
+
+    .good p, .bad p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 20px 15px;
+        text-align: center;
+    }
+}
