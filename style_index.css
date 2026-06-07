@@ -1,209 +1,270 @@
-a {
-    color: rgb(32, 91, 25);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    gap: 30px; /* Одинаковое расстояние между ссылками */
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
 .logo {
-    color: rgb(25, 212, 38);
-    transition: 1s;
-    margin-left: 200px;
-    font-size: 30px; 
-    
+    font-size: 30px;
+    font-weight: 700;
+    color: #6fc77b;
 }
-.logo:hover {
-    color: aquamarine;
-    transition: 1s;
-    margin-left: 200px;
-    font-size: 36px;
+
+nav a:hover {
+    color: #6fc77b;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .welcome-block {
-    margin-left: 190px;
-    background-color: aqua;
-    width: 890px;
-    height: 180px;
-    border-radius: 25px;
-    font-size: 25px;
-    transition: 1s;
-    padding-left: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
 }
 
-.welcome-block:hover {
-    margin-left: 190px;
-    background-color: aqua;
-    width: 910px;
-    height: 200px;
-    border-radius: 25px;
-    font-size: 28px;
-    transition: 1s;
-    padding-left: 25px;
+.welcome-block h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #222;
 }
+
+.welcome-block p {
+    font-size: 1.4rem;
+    color: #666;
+}
+
 .features-grid {
-    margin-left: 190px;
-    background-color: aquamarine;
-    width: 880px;
-    border-radius: 25px;
-    padding-left: 25px;
-    height: 220px;
-    margin-top: 20px;
-    font-size: 25px;
-    transition: 1s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto 60px auto;
+    max-width: 800px;
 }
 
-.features-grid:hover {
-    margin-left: 190px;
-    background-color: aquamarine;
-    width: 900px;
-    border-radius: 25px;
-    padding-left: 25px;
-    height: 240px;
-    margin-top: 20px;
-    font-size: 28px;
-    transition: 1s;
+.feature-card {
+    background-color: #f7e3bf;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-footer {
-    margin-left: 190px;
-    margin-top: 100px;
-}
-nav {
-    margin-left: 660px;
-    transition: 1s;
-    margin-bottom: 20px;
-    color:rgb(25, 212, 38);
-    font-size: 20px;
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-nav:hover {
-    margin-left: 600px;
-    font-size: 23px;
-    transition: 1s;
-    color: aquamarine;
+.feature-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .reg-section {
-    width: 890px;
-    height: 100%;
-    background-color:aqua;
+    background-color: #f7e3bf;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
     border-radius: 25px;
-    padding: 25px;
-    margin-left: 190px;
-    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-#email {
-    width: 250px;
-    height: 30px;
-    background-color: antiquewhite;
-    border-radius: 25px;
-    
+.reg-section h2 {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
 }
-#password {
-    width: 250px;
-    height: 30px;
-    background-color: antiquewhite;
-    border-radius: 25px;
 
+#regForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-#repeatPassword {
-    width: 250px;
-    height: 30px;
-    background-color: antiquewhite;
-    border-radius: 25px;
-    
 
+#regForm input {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    outline: none;
 }
+
+#regForm input:focus {
+    box-shadow: 0 0 0 3px #d18d4b;
+}
+
+#passwordError {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
 .button1 {
-    width: 190px;
-    height: 30px;
-    background-color: rgb(196, 148, 85);
-    border-radius: 25px;
-    transition: 1s;
+    padding: 15px;
+    background-color: #d18d4b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     margin-top: 10px;
-    
 }
 
 .button1:hover {
-    width: 210px;
-    height: 36px;
-    background-color: rgb(125, 89, 41);
-    border-radius: 35px;
-    transition: 1s;
-    margin-top: 10px;
-    
-
+    background-color: #b87836;
 }
 
+footer {
+    background-color: #fdf6eb;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
 
-@media screen and (max-width: 768px) {
+.socials, .links {
+    display: flex;
+    gap: 20px;
+}
 
-    
-    #welcome-block,
-    .welcome-block:hover,
-    .reg-section,
-    nav,
-    footer,
-    .logo-hover,
-    .features-grid,
-    .features-grid:hover {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: 100%; 
-        box-sizing: border-box; 
+footer a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d18d4b;
+}
+
+footer div {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
     }
 
-    #logo {
-        margin-left: 0;
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .welcome-block h1 {
+        font-size: 2.4rem;
+    }
+
+    .features-grid {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .welcome-block {
+        padding: 20px 10px;
+    }
+
+    .welcome-block h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-block p {
+        font-size: 1.1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .reg-section {
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .features-grid, .features-grid:hover {
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-        height: auto; 
         padding: 20px;
+        margin: 0 10px;
     }
 
-    #email, #password, #repeatPassword {
-        width: 100%;
-        max-width: 400px; 
-        margin-left: 0;
-        margin-right: 0;
-        box-sizing: border-box;
+    .reg-section h2 {
+        font-size: 1.4rem;
     }
 
-    .button1, .button1:hover {
-        width: 100%;
-        max-width: 400px;
-        margin-left: 0;
-        margin-right: 0;
+    #regForm input {
+        padding: 12px;
     }
 
-    .welcome-block, .welcome-block:hover {
-        width: 90%; 
-        max-width: 400px;
-        margin: 30px auto; 
-        padding: 20px;
-        height: auto; 
-        display: flex;
-        text-align: center;
-        transition: 1s;
+    .button1 {
+        padding: 12px;
+        font-size: 1rem;
     }
 
-    nav, footer {
-        text-align: center;
-        padding: 10px;
-        font-size: 16px;
-    }
-    
-    nav {
-        margin-bottom: 10px;
-        display: flex; 
-        flex-direction: column; 
+    footer {
+        padding: 20px 15px;
     }
 }
