@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMarket - Помощь</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_help.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GeoMarket</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Страны</a>
+            <a href="feedback.html">Отзывы</a>
+            <a href="akk.html">Личный кабинет</a>
+            <a href="help.html">Поддержка</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="help-intro">
+            <h1>Мы здесь, чтобы помочь!</h1>
+            <p>Не нашли свою страну? Проблемы с оплатой? Свяжитесь с нами, и наш тик-токер-менеджер решит вопрос в ближайшее время.</p>
+        </section>
+
+        <section class="form-wrapper">
+            <h2>Связь с поддержкой</h2>
+            <form id="supportForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Email для ответа" required>
+                <select id="problem" required>
+                    <option value="" disabled selected>Выберите проблему</option>
+                    <option value="delivery">Проблемы с доставкой</option>
+                    <option value="payment">Оплата не прошла</option>
+                    <option value="wrong">Прислали не ту страну</option>
+                    <option value="other">Другое</option>
+                </select>
+                <textarea id="message" placeholder="Опишите вашу ситуацию подробнее..." required></textarea>
+                <button type="submit">Отправить запрос</button>
+            </form>
+            <div id="statusMessage" style="margin-top: 15px; text-align: center; font-weight: 600; display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="#">ВК</a>
+            <a href="#">ТГ</a>
+            <a href="#">Инста</a>
+        </div>
+        <div class="links">
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div>© 2026 GeoMarket — Покупай страны, будь в тренде!</div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
