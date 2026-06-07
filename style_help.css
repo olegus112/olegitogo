@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    gap: 30px; /* Одинаковое расстояние между ссылками */
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #6fc77b;
+}
+
+nav a:hover {
+    color: #6fc77b;
+}
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.help-intro {
+    text-align: center;
+    max-width: 600px;
+}
+
+.help-intro h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #1d1d1d;
+}
+
+.help-intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.form-wrapper {
+    background-color: #fdf3e0;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: 1px solid transparent;
+    transition: outline 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #bb8f5a;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #bb8f5a;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a07041;
+}
+
+footer {
+    background-color: #fdf6eb;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.socials, .links {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d18d4b;
+}
+
+footer div {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* --- МЕДИА ЗАПРОСЫ (аналогично вашему примеру) --- */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .help-intro h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .help-intro {
+        padding: 0 10px;
+    }
+
+    .help-intro h1 {
+        font-size: 2rem;
+    }
+
+    .help-intro p {
+        font-size: 1.1rem;
+    }
+
+    .form-wrapper {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .form-wrapper h2 {
+        font-size: 1.4rem;
+    }
+
+    input, select, textarea {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
+}
