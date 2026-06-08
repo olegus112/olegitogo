@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,7 @@ header {
 
 nav {
     display: flex;
-    gap: 30px; /* Одинаковое расстояние между ссылками */
+    gap: 30px;
 }
 
 nav a {
@@ -44,6 +43,17 @@ nav a:hover {
     color: #6fc77b;
 }
 
+main.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 footer {
     display: flex;
@@ -52,7 +62,6 @@ footer {
     padding: 30px 20px;
     background-color: #fdf6eb;
     gap: 12px;
-    margin-top: 50px;
 }
 
 .socials, .links {
@@ -76,7 +85,6 @@ footer div:last-child {
     font-size: 14px;
 }
 
-
 .akk {
     display: flex;
     justify-content: center;
@@ -85,6 +93,8 @@ footer div:last-child {
     text-align: center;
     border-radius: 25px;
     margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .img1000 {
@@ -103,6 +113,7 @@ footer div:last-child {
     margin-left: 20px;
     border-radius: 25px;
     padding: 15px;
+    width: 100%;
 }
 
 .img1100 {
@@ -118,7 +129,7 @@ footer div:last-child {
     border-radius: 25px;
     text-align: center;
     padding: 15px;
-    margin: 25px;
+    margin: 25px auto;
     width: 350px;
     max-width: 100%;
 }
@@ -126,12 +137,11 @@ footer div:last-child {
 .feedback {
     background-color: rgb(234, 195, 147);
     padding: 15px;
-    margin: 15px;
+    margin: 15px auto;
     border-radius: 25px;
     width: 350px;
     max-width: 100%;
 }
-
 
 @media (max-width: 1024px) {
     header {
@@ -149,6 +159,7 @@ footer div:last-child {
     .akk {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 15px;
     }
 
     .card2,
@@ -182,6 +193,7 @@ footer div:last-child {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        width: 100%;
     }
 
     .infa {
