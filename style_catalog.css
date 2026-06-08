@@ -78,7 +78,7 @@ main.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 550px;
+    min-height: 490px;
 }
 
 .card1:hover {
