@@ -86,8 +86,8 @@ main.container {
 }
 
 .img10 {
-    width: 240px;
-    height: 200px;
+    width: 100%;
+    height: 160px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 15px;
