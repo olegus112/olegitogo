@@ -85,11 +85,13 @@ main.container {
 }
 
 .img10 {
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 240px;
+    height: 160px;
+    object-fit: contain;
     border-radius: 15px;
     margin-bottom: 15px;
+    display: block;
 }
 
 .card1 h1 {
@@ -113,7 +115,7 @@ main.container {
     flex-grow: 1;
 }
 
-.card1 button {
+.buy-btn {
     padding: 12px 30px;
     background-color: #d18d4b;
     color: #ffffff;
@@ -126,7 +128,7 @@ main.container {
     margin-top: auto;
 }
 
-.card1 button:hover {
+.buy-btn:hover {
     background-color: #b87836;
 }
 
@@ -186,7 +188,7 @@ footer div {
     }
 
     .img10 {
-        height: 140px;
+        height: 120px;
     }
 }
 
